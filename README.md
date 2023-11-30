@@ -1,2 +1,1 @@
-# SchoolStuffs
-School
+school stuff here.
