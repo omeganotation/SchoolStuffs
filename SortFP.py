@@ -61,9 +61,10 @@ while True:
     print("1. Add")
     print("2. Remove")
     print("3. Search")
-    print("4. Quit")
+    print("4. Show Dex")
+    print("5. Quit")
     vi = input()
-    if (vi == "1" or vi == "2" or vi == "3" or vi == "4"):
+    if (vi == "1" or vi == "2" or vi == "3" or vi == "4" or vi == "5"):
         if vi == "1":
             print("What pokemon do you want to add to the dex?")
             pokemon = input().lower()
@@ -147,7 +148,12 @@ while True:
                 else:
                     print("That is not a valid method. Try again.")
                     dummy = input()
-        else:
+            dummy = input()
+        elif vi == "4":
+            for i in v:
+                print(i)
+            dummy = input()
+        else: 
             break
     else:
         print("Invalid command. Enter to continue")
